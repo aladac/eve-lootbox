@@ -1,12 +1,37 @@
-table.table
-  thead
-    tr
-      th ID
-      th Name
-      th Average Price
-  tbody
-    - @loot.each do |item|
-      tr
-        td= item.id
-        td= item.name
-        td= item.price
+a.mb-4(href="/" class="btn btn-primary btn-sm")
+  i.fas.fa-arrow-left.mr-2
+  | Back
+
+.card.mb-4#box
+  .card-header
+    h4
+      strong=@ded.name
+      .float-right="#{@ded.level}/10"
+
+    img.icon-big(src="https://image.eveonline.com/Type/#{@ded.boss.id}_64.png")
+    strong.mr-2.ml-2 Boss Name:
+    | #{@ded.boss.name}
+  .card-body
+    table.table.table-hover.pointer
+      thead
+        tr.table-primary
+          th
+          th Name
+          th.text-right Average Price
+          th.text-right
+      tbody
+        - @loot.sort_by { |e| -e.price }.each do |item|
+          tr
+            td
+              img.icon(src="https://image.eveonline.com/Type/#{item.id}_32.png")
+            td.align-middle= item.name.gsub('Blueprint','Blueprint Copy (1 run)')
+            td.align-middle.text-right
+              - if item.price > 0
+                = ActiveSupport::NumberHelper.number_to_delimited(item.price.to_i) + ' ISK'
+              - else
+                = '-'
+            td.align-middle.text-right
+              - if item.price > 0
+                = ActiveSupport::NumberHelper.number_to_human(item.price) + ' ISK'
+              - else
+                = '-'

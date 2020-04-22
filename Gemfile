@@ -13,3 +13,5 @@ gem "slim", "~> 4.0"
 gem "pry", "~> 0.13.1"
 
 gem "ruby-esi", "~> 0.3.0"
+
+gem "activesupport", "~> 6.0"

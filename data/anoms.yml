@@ -3,6 +3,10 @@
   :escalates_to: 1
   :faction_id: 1
   :id: 1
+- :name: Blood Raider Rally Point
+  :escalates_to: 1
+  :faction_id: 1
+  :id: 6
 - :name: Blood Forlorn Rally Point
   :escalates_to: 2
   :faction_id: 1

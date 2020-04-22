@@ -2,6 +2,7 @@ require "bundler"
 Bundler.require
 
 require "yaml"
+require "active_support/number_helper"
 
 class Util
   def self.data_loader(name)
@@ -29,9 +30,10 @@ class Anom
 end
 
 class Ded
-  attr_accessor :id, :name, :escalates_from, :faction_id
+  attr_accessor :id, :name, :escalates_from, :faction_id, :level
 
   def initialize(ded)
+    @level = ded.level
     @id = ded.id
     @name = ded.name
     @escalates_from = ded.escalates_from

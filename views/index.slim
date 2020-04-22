@@ -1,15 +1,18 @@
-table.table
-  thead
-    tr
-      th Name
-      th Escalation
-      th Boss
-      th Loot
-  tbody
-    - @anoms.each do |anom|
-      tr
-        td= anom.name
-        td= anom.escalation.name
-        td= anom.escalation.boss.name
-        td
-          a(href="/loot/#{anom.escalation.id}") Loot
+.card#box
+  .card-body
+
+    table.table.table-hover
+      thead
+        tr.table-primary
+          th Name
+          th
+          th Escalation
+          th.text-right DED Threat Level
+      tbody
+        - @anoms.each do |anom|
+          tr.clickable(data-href="/loot/#{anom.escalation.id}")
+            td= anom.name
+            td
+              i.fas.fa-arrow-right
+            td= anom.escalation.name
+            td.text-right= anom.escalation.level.to_s + '/10'
