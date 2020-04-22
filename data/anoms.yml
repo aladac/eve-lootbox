@@ -51,3 +51,23 @@
   :escalates_to: 7
   :faction_id: 500020
   :id: 12
+- :name: Serpentis Sanctum
+  :escalates_to: 8
+  :faction_id: 500020
+  :id: 13
+- :name: Serpentis Heaven
+  :escalates_to: 8
+  :faction_id: 500020
+  :id: 14
+- :name: Sansha Rally Point
+  :escalates_to: 9
+  :faction_id: 500019
+  :id: 15
+- :name: Angel Hub
+  :escalates_to: 10
+  :faction_id: 500011
+  :id: 16
+- :name: Angel Heaven
+  :escalates_to: 11
+  :faction_id: 500011
+  :id: 17
