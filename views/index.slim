@@ -1,0 +1,10 @@
+table.table
+  thead
+    tr
+      th Name
+      th Escalation
+  tbody
+    - @anoms.each do |anom|
+      tr
+        td= anom.name
+        td= @deds

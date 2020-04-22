@@ -1,0 +1,21 @@
+---
+- :name: Crimson Hand Supply Depot
+  :level: 6
+  :escalates_from:
+    - 1
+  :faction_id: 1
+  :id: 1
+- :name: Blood Raider Prison Camp
+  :level: 8
+  :escalates_from:
+    - 2
+    - 3
+  :faction_id: 1
+  :id: 2
+- :name: Blood Raider Naval Shipyard
+  :level: 10
+  :escalates_from:
+    - 4
+    - 5
+  :faction_id: 1
+  :id: 3

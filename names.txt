@@ -1,0 +1,22 @@
+Hideaway
+Hidden Hideaway
+Forsaken Hideaway
+Forlorn Hideaway
+Burrow
+Refuge
+Den
+Hidden Den
+Forsaken Den
+Forlorn Den
+Yard
+Rally Point
+Hidden Rally Point
+Forsaken Rally Point
+Forlorn Rally Point
+Port
+Hub
+Hidden Hub
+Forsaken Hub
+Forlorn Hub
+Haven
+Sanctum
