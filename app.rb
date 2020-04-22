@@ -42,8 +42,16 @@ class Ded
     Util.data_loader(:deds).map { |a| Ded.new(a) }
   end
 
+  def self.find(id)
+    Ded.all.select { |ded| ded.id == id }.first
+  end
+
   def boss
     Boss.all.select { |b| b.boss_of == @id }.first
+  end
+
+  def loot
+    Loot.from(self)
   end
 end
 
@@ -90,9 +98,13 @@ class Loot
   end
 end
 
-binding.pry
-
 get '/' do
   @anoms = Anom.all
   slim :index
+end
+
+get '/loot/:id' do
+  @ded = Ded.find(params['id'].to_i)
+  @loot = @ded.loot
+  slim :loot
 end

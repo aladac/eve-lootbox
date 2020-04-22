@@ -4,9 +4,12 @@ table.table
       th Name
       th Escalation
       th Boss
+      th Loot
   tbody
     - @anoms.each do |anom|
       tr
         td= anom.name
         td= anom.escalation.name
         td= anom.escalation.boss.name
+        td
+          a(href="/loot/#{anom.escalation.id}") Loot
