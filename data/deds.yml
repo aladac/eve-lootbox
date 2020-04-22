@@ -3,19 +3,35 @@
   :level: 6
   :escalates_from:
     - 1
-  :faction_id: 1
+  :faction_id: 500012
   :id: 1
 - :name: Blood Raider Prison Camp
   :level: 8
   :escalates_from:
     - 2
     - 3
-  :faction_id: 1
+  :faction_id: 500012
   :id: 2
 - :name: Blood Raider Naval Shipyard
   :level: 10
   :escalates_from:
     - 4
     - 5
-  :faction_id: 1
+  :faction_id: 500012
   :id: 3
+- :id: 6
+  :name: The Maze
+  :level: 10
+  :faction_id: 500010
+- :id: 5
+  :name: Pith Penal Complex
+  :level: 8
+  :faction_id: 500010
+- :id: 4
+  :name: Guristas Troop Reinvigoration Camp
+  :level: 6
+  :faction_id: 500010
+- :id: 7
+  :name: Serpentis Prison Camp
+  :level: 8
+  :faction_id: 500020

@@ -1,25 +1,53 @@
 ---
 - :name: Blood Rally Point
   :escalates_to: 1
-  :faction_id: 1
+  :faction_id: 500012
   :id: 1
 - :name: Blood Raider Rally Point
   :escalates_to: 1
-  :faction_id: 1
+  :faction_id: 500012
   :id: 6
 - :name: Blood Forlorn Rally Point
   :escalates_to: 2
-  :faction_id: 1
+  :faction_id: 500012
   :id: 2
 - :name: Blood Hub
   :escalates_to: 2
-  :faction_id: 1
+  :faction_id: 500012
   :id: 3
 - :name: Blood Sanctum
   :escalates_to: 3
-  :faction_id: 1
+  :faction_id: 500012
   :id: 4
 - :name: Blood Heaven
   :escalates_to: 3
-  :faction_id: 1
+  :faction_id: 500012
   :id: 5
+- :name: Guristas Rally Point
+  :escalates_to: 4
+  :faction_id: 500010
+  :id: 6
+- :name: Guristas Forlorn Rally Point
+  :escalates_to: 5
+  :faction_id: 500010
+  :id: 7
+- :name: Guristas Hub
+  :escalates_to: 5
+  :faction_id: 500010
+  :id: 8
+- :name: Guristas Sanctum
+  :escalates_to: 6
+  :faction_id: 500010
+  :id: 9
+- :name: Guristas Heaven
+  :escalates_to: 6
+  :faction_id: 500010
+  :id: 10
+- :name: Serpentis Forlorn Rally Point
+  :escalates_to: 7
+  :faction_id: 500020
+  :id: 11
+- :name: Serpentis Hub
+  :escalates_to: 7
+  :faction_id: 500020
+  :id: 12

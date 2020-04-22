@@ -1,0 +1,21 @@
+---
+- :id: 500010
+  :corporation_id: 1000127
+  :name: Guristas Pirates
+  :pattern: !ruby/regexp /Guristas/i
+- :id: 500011
+  :corporation_id: 1000138
+  :name: Angel Cartel
+  :pattern: !ruby/regexp /Angel/i
+- :id: 500012
+  :corporation_id: 1000134
+  :name: Blood Raider Covenant
+  :pattern: !ruby/regexp /Blood/i
+- :id: 500019
+  :corporation_id: 1000162
+  :name: Sansha's Nation
+  :pattern: !ruby/regexp /Sansha/i
+- :id: 500020
+  :corporation_id: 1000135
+  :name: Serpentis
+  :pattern: !ruby/regexp /(?-mix:Serpentis)|(?-mix:Shadow)/

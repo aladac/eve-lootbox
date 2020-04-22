@@ -1,6 +1,13 @@
-a.mb-4(href="/" class="btn btn-primary btn-sm")
-  i.fas.fa-arrow-left.mr-2
-  | Back
+nav[aria-label="breadcrumb"]
+  ol.breadcrumb
+    li.breadcrumb-item
+      a[href="/"]
+        | Home
+    li.breadcrumb-item
+      a[href="/faction/#{@faction.id}"]
+        | #{@faction.name}
+    li.breadcrumb-item.active[aria-current="page"]
+      | #{@ded.name}
 
 .card.mb-4#box
   .card-header

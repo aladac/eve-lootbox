@@ -40,3 +40,55 @@
     - 19045
     - 19119
     - 37631
+- :id: 25528
+  :name: Guristas Fleet Stronghold
+  :boss_of: 6
+  :loot:
+    - 17919
+    - 19207
+    - 19208
+    - 19282
+    - 19284
+    - 19286
+    - 19288
+    - 19295
+    - 19421
+- :id: 18645
+  :name: Captive Fighting Arena
+  :boss_of: 4
+  :loot:
+    - 4347
+    - 17716
+    - 19151
+    - 19191
+    - 19225
+    - 19227
+    - 19229
+    - 19231
+    - 19417
+- :id: 19592
+  :name: "'Screaming' Dewak Humfry"
+  :boss_of: 5
+  :loot:
+    - 17919
+    - 19203
+    - 19204
+    - 19266
+    - 19268
+    - 19270
+    - 19272
+    - 19303
+    - 19419
+- :id: 3809
+  :name: Serpentis Administration Facility
+  :boss_of: 7
+  :loot:
+    - 19419
+    - 17741
+    - 18690
+    - 18957
+    - 18959
+    - 18961
+    - 18963
+    - 19036
+    - 19323

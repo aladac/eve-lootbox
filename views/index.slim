@@ -1,4 +1,20 @@
+nav[aria-label="breadcrumb"]
+  ol.breadcrumb
+    - if @faction
+      li.breadcrumb-item[aria-current="page"]
+        a(href="/")
+          | Home
+      li.breadcrumb-item.active[aria-current="page"]
+        | #{@faction.name}
+    - else
+      li.breadcrumb-item.active[aria-current="page"]
+        | Home
+
 .card#box
+  .card-header
+    - @factions.each do |faction|
+      a(href="/faction/#{faction.id}")
+        img(src="/faction_#{faction.id}.png")
   .card-body
 
     table.table.table-hover

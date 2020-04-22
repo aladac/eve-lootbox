@@ -100,13 +100,40 @@ class Loot
   end
 end
 
+class Faction
+  attr_accessor :id, :name, :pattern
+
+  def initialize(faction)
+    @id = faction.id
+    @name = faction.name
+    @pattern = faction.pattern
+  end
+
+  def self.all
+    Util.data_loader(:factions).map { |f| Faction.new(f) }
+  end
+
+  def self.find(id)
+    Faction.all.select { |ded| ded.id == id }.first
+  end
+end
+
 get '/' do
+  @factions = Faction.all
   @anoms = Anom.all
   slim :index
 end
 
 get '/loot/:id' do
   @ded = Ded.find(params['id'].to_i)
+  @faction = Faction.find(@ded.faction_id)
   @loot = @ded.loot
   slim :loot
+end
+
+get '/faction/:id' do
+  @factions = Faction.all
+  @faction = Faction.find(params['id'].to_i)
+  @anoms = Anom.all.select { |a| a.faction_id == @faction.id }
+  slim :index
 end
