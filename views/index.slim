@@ -3,8 +3,10 @@ table.table
     tr
       th Name
       th Escalation
+      th Boss
   tbody
     - @anoms.each do |anom|
       tr
         td= anom.name
-        td= @deds
+        td= anom.escalation.name
+        td= anom.escalation.boss.name

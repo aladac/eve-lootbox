@@ -1,6 +1,7 @@
 ---
 - :id: 25559
-  :boss_of: 1
+  :name: Blood Raider Fleet Stronghold
+  :boss_of: 3
   :loot:
     - 19421
     - 17921
@@ -12,7 +13,8 @@
     - 19119
     - 37631
 - :id: 17900
-  :boss_of: 2
+  :name: Crimson Lord
+  :boss_of: 1
   :loot:
     - 19417
     - 17923
@@ -26,7 +28,8 @@
     - 19111
     - 37627
 - :id: 3795
-  :boss_of: 3
+  :name: Blood Raider Central Bastion
+  :boss_of: 2
   :loot:
     - 19421
     - 17921
