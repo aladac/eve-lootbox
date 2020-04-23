@@ -19,7 +19,7 @@
   :escalates_to: 3
   :faction_id: 500012
   :id: 4
-- :name: Blood Heaven
+- :name: Blood Haven
   :escalates_to: 3
   :faction_id: 500012
   :id: 5
@@ -39,7 +39,7 @@
   :escalates_to: 6
   :faction_id: 500010
   :id: 9
-- :name: Guristas Heaven
+- :name: Guristas Haven
   :escalates_to: 6
   :faction_id: 500010
   :id: 10
@@ -55,7 +55,7 @@
   :escalates_to: 8
   :faction_id: 500020
   :id: 13
-- :name: Serpentis Heaven
+- :name: Serpentis Haven
   :escalates_to: 8
   :faction_id: 500020
   :id: 14
@@ -67,7 +67,7 @@
   :escalates_to: 10
   :faction_id: 500011
   :id: 16
-- :name: Angel Heaven
+- :name: Angel Haven
   :escalates_to: 11
   :faction_id: 500011
   :id: 17
