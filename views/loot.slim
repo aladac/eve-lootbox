@@ -11,15 +11,12 @@ nav[aria-label="breadcrumb"]
 
 .card.mb-4#box
   .card-header
-    h4
-      strong=@ded.name
-      .float-right="#{@ded.level}/10"
-
     img.icon-big(src="https://image.eveonline.com/Type/#{@ded.boss.id}_64.png")
     strong.mr-2.ml-2 Boss Name:
     | #{@ded.boss.name}
   .card-body
-    table.table.table-hover.pointer
+    .text-muted.text-small.mb-2 Possible Loot
+    table.table.table-hover.table-sm.pointer(style="caption-side: top;")
       thead
         tr.table-primary
           th

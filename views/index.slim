@@ -12,11 +12,12 @@ nav[aria-label="breadcrumb"]
 
 .card#box
   .card-header
+    .text-muted.text-small.mb-2 Choose a faction
     - @factions.each do |faction|
       a(href="/faction/#{faction.id}")
-        img(src="/faction_#{faction.id}.png")
+        img(class="faction" src="/faction_#{faction.id}.png" style="height: 100px")
   .card-body
-
+    .text-muted.text-small.mb-2 Click one of the rows below to show possible loot
     table.table.table-hover
       thead
         tr.table-primary

@@ -18,3 +18,7 @@ body {
 .icon {
   height: 32px;
 }
+
+img.faction {
+  height: 48px;
+}
