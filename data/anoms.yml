@@ -71,3 +71,11 @@
   :escalates_to: 11
   :faction_id: 500011
   :id: 17
+- :name: Guristas Port
+  :escalates_to: 12
+  :faction_id: 500010
+  :id: 18
+- :name: Serpentis Rally Point
+  :escalates_to: 13
+  :faction_id: 500020
+  :id: 19

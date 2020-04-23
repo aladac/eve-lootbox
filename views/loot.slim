@@ -11,9 +11,13 @@ nav[aria-label="breadcrumb"]
 
 .card.mb-4#box
   .card-header
-    img.icon-big(src="https://image.eveonline.com/Type/#{@ded.boss.id}_64.png")
-    strong.mr-2.ml-2 Boss Name:
-    | #{@ded.boss.name}
+    span.mr-4
+      img.icon-big(src="https://image.eveonline.com/Type/#{@ded.boss.id}_64.png")
+      strong.mr-2.ml-2 Boss Name:
+      | #{@ded.boss.name}
+    span(style="color: yellow")
+      - if @ded.parts
+        | This is a #{@ded.parts} part escallation. The boos with loot will be located in the last site.
   .card-body
     .text-muted.text-small.mb-2 Possible Loot
     table.table.table-hover.table-sm.pointer(style="caption-side: top;")

@@ -51,3 +51,12 @@
   :name: Angel Cartel Naval Shipyard
   :faction_id: 500011
   :level: 10
+- :id: 12
+  :name: Gurista Military Operations Complex
+  :faction_id: 500010
+  :level: 7
+- :id: 13
+  :name: Serpentis Logistical Outpost
+  :faction_id: 500020
+  :level: 6
+  :parts: 2

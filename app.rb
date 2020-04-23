@@ -30,9 +30,10 @@ class Anom
 end
 
 class Ded
-  attr_accessor :id, :name, :escalates_from, :faction_id, :level
+  attr_accessor :id, :name, :escalates_from, :faction_id, :level, :parts
 
   def initialize(ded)
+    @parts = ded.parts
     @level = ded.level
     @id = ded.id
     @name = ded.name
@@ -120,7 +121,7 @@ end
 
 get '/' do
   @factions = Faction.all
-  @anoms = Anom.all
+  @anoms = Anom.all.sort_by { |a| a.name }
   slim :index
 end
 
