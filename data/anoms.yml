@@ -79,3 +79,11 @@
   :escalates_to: 13
   :faction_id: 500020
   :id: 19
+- :name: Sansha Port
+  :escalates_to: 14
+  :faction_id: 500019
+  :id: 20
+- :name: Angel Rally Point
+  :escalates_to: 15
+  :faction_id: 500011
+  :id: 21

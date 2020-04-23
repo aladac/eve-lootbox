@@ -60,3 +60,12 @@
   :faction_id: 500020
   :level: 6
   :parts: 2
+- :id: 14
+  :name: Sansha Military Operations Complex
+  :faction_id: 500019
+  :level: 7
+- :id: 15
+  :name: Angel Mineral Acquisition Outpost
+  :faction_id: 500011
+  :level: 6
+  :parts: 2

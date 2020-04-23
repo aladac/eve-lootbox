@@ -135,6 +135,6 @@ end
 get '/faction/:id' do
   @factions = Faction.all
   @faction = Faction.find(params['id'].to_i)
-  @anoms = Anom.all.select { |a| a.faction_id == @faction.id }
+  @anoms = Anom.all.select { |a| a.faction_id == @faction.id }.sort_by { |a| a.escalation.level }
   slim :index
 end
