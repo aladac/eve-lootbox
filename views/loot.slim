@@ -25,6 +25,7 @@ nav[aria-label="breadcrumb"]
         tr.table-primary
           th
           th Name
+          th Guaranteed?
           th.text-right Average Price
           th.text-right
       tbody
@@ -33,6 +34,9 @@ nav[aria-label="breadcrumb"]
             td
               img.icon(src="https://image.eveonline.com/Type/#{item.id}_32.png")
             td.align-middle= item.name.gsub('Blueprint','Blueprint Copy (1 run)')
+            td.text-center.align-middle
+              - if item.name =~ /Overseer's Personal Effects/
+                i.fas.fa-check.guaranteed(style="color: green")
             td.align-middle.text-right
               - if item.price > 0
                 = ActiveSupport::NumberHelper.number_to_delimited(item.price.to_i) + ' ISK'
