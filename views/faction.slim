@@ -20,10 +20,19 @@ nav[aria-label="breadcrumb"]
       a(href="/faction/#{faction.id}")
         img(class="faction" src="/faction_#{faction.id}.png" style="height: 100px")
   .card-body
-    strong DED Site Loot Pinata!
-    .text-muted.text-small.mb-2
-      p
-      p Here is a set of lists of Cosmic Anomaly Combat Sites per faction.
-      p Each DED site has a list of potential loot along with the guaranteed loot marked.
-      p Click on a faction logo to see sites specific to that faction.
-      p
+    .text-muted.text-small.mb-2 Click one of the rows below to show possible loot
+    table.table.table-hover
+      thead
+        tr.table-primary
+          th Combat Anomaly
+          th
+          th Escalation
+          th.text-right DED Threat Level
+      tbody
+        - @anoms.each do |anom|
+          tr.clickable(data-href="/loot/#{anom.escalation.id}")
+            td= anom.name
+            td
+              i.fas.fa-arrow-right
+            td= anom.escalation.name
+            td.text-right= anom.escalation.level.to_s + '/10'
